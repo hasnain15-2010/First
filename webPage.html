@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormAssembly Webpage</title>
+
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #0b5ed7;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-outline {
+            border: 1px solid white;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        .btn-green {
+            background: green;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        .A {
+    background: linear-gradient(to right, #0b5ed7, #0a58ca);
+    color: white;
+    padding: 120px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+        .hero-text {
+            width: 55%;
+        }
+
+        .B h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .hero-text button {
+            background: green;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;c
+        }
+
+        .hero-text button:hover {
+            background: darkgreen;
+            transform: scale(1.05);
+        }
+
+        .C {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 360px;
+            border-radius: 12px;
+        }
+
+        .D {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: none;
+            color: black;
+            padding: 5px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        .E {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .trust p {
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #333;
+        }
+
+        .trust {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .F {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.F img {
+    height: 50px;
+    width: auto;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    transition: all 0.3s ;
+}
+
+.F img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+
+
+
+        footer {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 60px;
+        }
+
+        footer h2 {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+<header>
+    <h2>Form Assembly</h2>
+    <nav>
+        <a href="#">Solutions</a>
+        <a href="#">Product</a>
+        <a href="#">Resources</a>
+        <a href="#">Plans</a>
+        <a href="#" class="btn-outline">Start Trial</a>
+        <a href="#" class="btn-green">Book Demo</a>
+    </nav>
+</header>
+
+
+<section class="A">
+    <div class="B">
+        <h1>Collect, Connect & Protect Your Data</h1>
+        <p>
+            Effortlessly create forms, integrate data, and protect sensitive
+            information using our platform.
+        </p>
+        <button style="background-color: green; color: #f5f5f5;">Talk to an Expert</button>
+    </div>
+
+    <div class="C">
+        <img src="./images.png" alt="Video">
+        <div class="D">made by M.hasnain</div>
+    </div>
+</section>
+
+<section class="trust">
+    <p>Over 5,500 organizations trust us</p>
+
+    <div class="F">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="Dell">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/CVS_Health_logo.svg" alt="CVS">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Harvard_University_logo.svg" alt="Harvard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/LendingTree_logo.svg" alt="LendingTree">
+    </div>
+</section>
+
+
+
+<footer>
+    <p>No data collection strategy?</p>
+    <h2>You’re losing more than you think.</h2>
+</footer>
+
+</body>
+</html>
